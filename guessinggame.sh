@@ -18,7 +18,7 @@ check_guess() {
 num_files=$(ls -A | wc -l)  # number of files in the directory
 num_check='^[0-9]+$'
 guesses=0  # keep track of number of guesses needed
-ret=0
+ret=0      # variable used to determine when "while" loop ends
 
 # While loop that prompts user for a new guess until the right answer is determined
 while [[ $ret -lt 1 ]]
